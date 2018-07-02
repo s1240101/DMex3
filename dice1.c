@@ -1,12 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define N 20
 int main(){
-
+  char name[N];
   int number1, number2;
   srand(time(NULL));
   number1=rand()%6+1;
   number2=rand()%6+1;
+
+  printf("What is your name?\n");
+  scanf("%s",name);
+  printf("Hello, %s!\n",name);
+  
   printf("The twomdice numbers are ...\n");
   printf("%d\n",number1);
   printf("%d\n",number2);
