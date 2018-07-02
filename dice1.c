@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+
+  int number1, number2;
+  srand(time(NULL));
+  number1=rand()%6+1;
+  number2=rand()%6+1;
+  printf("The twomdice numbers are ...\n");
+  printf("%d\n",number1);
+  printf("%d\n",number2);
+
+  int total=number1+number2;
+
+  printf("The total of the numbers is %d\n",total);
+
+  return 0;
+}
